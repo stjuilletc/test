@@ -17,10 +17,10 @@ public class Fenetre extends JFrame {
 
     public Fenetre(){
         this.setTitle("Fenetre");
-        this.setSize(300, 300);
+        this.setSize(500, 500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        GridLayout g=new GridLayout(4,2);
+        GridLayout g=new GridLayout(2,4);
         container.setLayout(g);
         container.add(labelA);
         container.add(jtfA);
