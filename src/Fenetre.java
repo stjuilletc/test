@@ -32,9 +32,27 @@ public class Fenetre extends JFrame {
         float [] Z= new float[]{10,10,10,10,10};
         float [] E= new float[]{26,24,22,20,18};
         float [] R= new float[]{25,20,15,0,0};
-        Jungle = new Champions [3];
+        Jungle = new Champions [4];
         champs = new Champions("Diana",A,Z,E,R);
+        float [] A1= new float[]{(float)3.5,(float)3.25,3,(float)2.75,(float)2.5};
+        float [] Z1= new float[]{13,(float)12.5,12,(float)11.5,11};
+        float [] E1= new float[]{14,(float)13.5,13,(float)12.5,12};
+        float [] R1= new float[]{120,100,80,0,0};
+        Champions champi = new Champions("Skarner",A1,Z1,E1,R1);
+        float [] A2= new float[]{14,13,12,11,10};
+        float [] Z2= new float[]{40,36,32,28,24};
+        float [] E2= new float[]{12,11,10,9,8};
+        float [] R2= new float[]{160,140,120,0,0};
+        Champions hero = new Champions("Ivern",A2,Z2,E2,R2);
+        float [] A3= new float[]{15,14,13,12,11};
+        float [] Z3= new float[]{4,(float)3.75,(float)3.5,(float)3.25,3};
+        float [] E3= new float[]{12,(float)11.5,11,(float)10.5,10};
+        float [] R3= new float[]{150,140,130,0,0};
+        Champions fdp = new Champions("Fiddlesticks",A3,Z3,E3,R3);
         Jungle[0]= champs;
+        Jungle[1]=champi;
+        Jungle[2]=hero;
+        Jungle[3]=fdp;
         t[1][0]=new JLabel("A");
         t[2][0]=new JLabel("Z");
         t[3][0]=new JLabel("E");
@@ -63,7 +81,7 @@ public class Fenetre extends JFrame {
         p.setLayout(new GridLayout(2,1));
         JPanel bas= new JPanel();
          tab = new Texte(this);
-         String [] st= {"Diana","Skarner","Ivern"};
+         String [] st= {"Diana","Skarner","Ivern","Fiddlesticks"};
          JComboBox box= new JComboBox(st);
          box.addItemListener(new ItemState());
          bas.add(box);
@@ -108,6 +126,18 @@ public class Fenetre extends JFrame {
         public void itemStateChanged(ItemEvent e) {
             if (e.getItem().equals("Diana")){
                 champs=Jungle[0];
+                actualise();
+            }
+            if (e.getItem().equals("Skarner")){
+                champs=Jungle[1];
+                actualise();
+            }
+            if (e.getItem().equals("Ivern")){
+                champs=Jungle[2];
+                actualise();
+            }
+            if (e.getItem().equals("Fiddlesticks")){
+                champs=Jungle[3];
                 actualise();
             }
         }
