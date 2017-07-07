@@ -1,4 +1,5 @@
 package ChampCDImg;
+
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.*;
@@ -40,51 +41,81 @@ public class Fenetre extends JFrame {
         float[] Z = new float[]{7, 6,  5, 4, 3};
         float[] E = new float[]{16, 14, 12, 10, 8};
         float[] R = new float[]{80, 80, 80, 0, 0};
+        Icon spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\JaxPassive.jpg");
+        Icon spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\JaxQ.jpg");
+        Icon spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\JaxW.jpg");
+        Icon spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\JaxE.jpg");
+        Icon spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\JaxR.jpg");
         Top = new Champions[6];
 
-        champs = new Champions("Jax", A, Z, E, R,"C:\\Users\\tom\\Downloads\\Jax.jpg");
+        champs = new Champions("Jax", A, Z, E, R,"C:\\Users\\sonny\\Downloads\\Jax.jpg",spP,spQ,spW,spE,spR);
         Top[0] = champs;
 
-         A = new float[] {7, 7, 7, 7, 7};
-         Z = new float[] {16, 16, 16, 16, 16};
-         E = new float[] {12, 11, 10, 9, 8};
-         R = new float[] {100, 90, 80, 0, 0};
+        A = new float[] {7, 7, 7, 7, 7};
+        Z = new float[] {16, 16, 16, 16, 16};
+        E = new float[] {12, 11, 10, 9, 8};
+        R = new float[] {100, 90, 80, 0, 0};
+        spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\OlafPassive.jpg");
+        spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\OlafQ.jpg");
+        spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\OlafW.jpg");
+        spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\OlafE.jpg");
+        spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\OlafR.jpg");
 
-        Champions c1 = new Champions ("Olaf", A ,Z ,E ,R,"C:\\Users\\tom\\Downloads\\Olaf.jpg");
+
+        Champions c1 = new Champions ("Olaf", A ,Z ,E ,R,"C:\\Users\\sonny\\Downloads\\Olaf.jpg",spP,spQ,spW,spE,spR);
         Top[1] = c1;
 
         A = new float[]{12, 12, 12, 12, 12};
         Z = new float[]{14, 14, 14, 14, 14};
         E = new float[]{13, 12, 11, 10, 9};
         R = new float[]{110, 100, 90, 0, 0};
+        spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\TryndamerePassive.jpg");
+        spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\TryndamereQ.jpg");
+        spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\TryndamereW.jpg");
+        spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\TryndamereE.jpg");
+        spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\TryndamereR.jpg");
 
-        Champions c2 = new Champions("Tryndamere", A, Z, E, R,"C:\\Users\\tom\\Downloads\\Tryndamere.jpg");
+        Champions c2 = new Champions("Tryndamere", A, Z, E, R,"C:\\Users\\sonny\\Downloads\\Tryndamere.jpg",spP,spQ,spW,spE,spR);
         Top[2] =  c2;
 
         A = new float[]{20,(float)17.5, 15, (float)12.5, 10};
         Z = new float[]{15, 13, 11, 9, 7};
         E = new float[]{22, (float)19.5, 17, (float)14.5, 12};
         R = new float[]{120, 100, 80, 0, 0};
-        //imic = new ImageIcon("C:\\Users\\tom\\Downloads\\Gnar.jpg");
-        //bimg= new BufferedImage(imic.getIconWidth(),imic.getIconHeight(),BufferedImage.TYPE_INT_ARGB);
-        Champions c3 = new Champions("Gnar", A, Z, E, R,"C:\\Users\\tom\\Downloads\\Gnar.jpg");
+        spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\GnarPassive.jpg");
+        spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\GnarQ.jpg");
+        spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\GnarW.jpg");
+        spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\GnarE.jpg");
+        spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\GnarR.jpg");
+        Champions c3 = new Champions("Gnar", A, Z, E, R,"C:\\Users\\sonny\\Downloads\\Gnar.jpg",spP,spQ,spW,spE,spR);
         Top[3] =  c3;
 
         A = new float[]{16, 14, 12, 10, 8};
         Z = new float[]{24, 22, 20, 18, 16};
         E = new float[]{13, 11, 9, 7, 5};
         R = new float[]{110, 90, 70, 0, 0};
-        Champions c4 = new Champions("Fiora", A, Z, E, R,"C:\\Users\\tom\\Downloads\\Fiora.jpg");
+        spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\FioraPassive.jpg");
+        spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\FioraQ.jpg");
+        spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\FioraW.jpg");
+        spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\FioraE.jpg");
+        spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\FioraR.jpg");
+        Champions c4 = new Champions("Fiora", A, Z, E, R,"C:\\Users\\sonny\\Downloads\\Fiora.jpg",spP,spQ,spW,spE,spR);
         Top[4] =  c4;
 
         A = new float[]{14, 12, 10, 8, 6};
         Z = new float[]{15, 15, 15, 15, 15};
         E = new float[]{8, 8, 8, 8, 8};
         R = new float[]{110, 85, 60, 0, 0};
-        Champions c5 = new Champions("Irelia", A, Z, E, R,"C:\\Users\\tom\\Downloads\\Irelia.jpg");
+        spP= new ImageIcon("C:\\Users\\sonny\\Downloads\\IreliaPassive.jpg");
+        spQ= new ImageIcon("C:\\Users\\sonny\\Downloads\\IreliaQ.jpg");
+        spW= new ImageIcon("C:\\Users\\sonny\\Downloads\\IreliaW.jpg");
+        spE= new ImageIcon("C:\\Users\\sonny\\Downloads\\IreliaE.jpg");
+        spR= new ImageIcon("C:\\Users\\sonny\\Downloads\\IreliaR.jpg");
+        Champions c5 = new Champions("Irelia", A, Z, E, R,"C:\\Users\\sonny\\Downloads\\Irelia.jpg",spP,spQ,spW,spE,spR);
         Top[5] =  c5;
 
-    t[0][0].setText("\\");
+        t[0][0].setText("  ");
+
 
         t[1][0] = new JLabel("A");
         t[1][0].setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
@@ -169,6 +200,12 @@ public class Fenetre extends JFrame {
                 }
             }
         }
+        t[0][0].setIcon(champs.getiP());
+        t[1][0].setIcon(champs.getiQ());
+        t[2][0].setIcon(champs.getiW());
+        t[3][0].setIcon(champs.getiE());
+        t[4][0].setIcon(champs.getiR());
+
         img.setImage(champs.getPicture());
         img.repaint();
 
