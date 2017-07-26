@@ -1,15 +1,14 @@
 body{
-background-image:-moz-linear-gradient(30deg, red, purple);
-background-image:-webkit-linear-gradient(30deg, red, purple);
-background-image:-o-linear-gradient(30deg, red, purple);
-background-image:linear-gradient(60deg, red, purple);
+color:black;
+background-color:white;
+background-image:url(C://xamp/htdocs/projet/HTML-CSS/fnd3.jpg);
 }
 p {
-	color: yellow;
+	color: white;
 }
 h1 {
-	color: yellow;
+	color: white;
 }
 h2 {
-	color: yellow;
+	color: white;
 }

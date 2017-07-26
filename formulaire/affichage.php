@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" type="text/css" href="fermetagueule.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8" />
         <title>Test2.SiteSonny</title>
         <h1>Voilà le formulaire sélectionné : </h1>
@@ -15,11 +15,12 @@
 			 	<ul>
 				<li> Question :  <?php echo $donnees['question']; ?> </li> 
 			 	<li> Reponse :  <?php echo $donnees['reponse']; ?> </li>
+                <li> description :  <?php echo $donnees['description']; ?> </li>
 				</ul>
 				<?php
 				
 			}
 			?>
-    <
+    
     </head>
     <body>

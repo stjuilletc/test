@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" type="text/css" href="fermetagueule.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8" />
         <title>Test2.SiteSonny</title>
-    </head>    
-        <h1>Voilà le formulaire sélectionné : </h1>
+    </head>
+        <p>
+        <form action="http://localhost:8080/projet/formulaire/accueilform.php">
+        <input type="submit" name="submit5" value="Retour à l'accueil">
+        </input>
+        </p>  
+        </form>  
+        <h1>Voilà le formulaire sélectionné :<?php echo $_GET['name']; ?> </h1>
 <!-- ajouter le nom du formulaire -->
     <body>     
     	<form method="post">
@@ -32,8 +38,17 @@
             </form>
             <?php
             if (isset($_POST['submit'])){
-             $ins=$bdd->prepare("INSERT INTO `questions`(`Nom`, `question`, `reponse`) VALUES (?,?,?)");
-            if (isset($_POST['nom']) and $_POST['nom']!="");
-             }
+             $ins=$bdd->query('SELECT * FROM questions WHERE Nom="'.$_GET['name'].'"');
+             $note=0;
+            while($donnees = $ins->fetch()){
+                if($donnees['reponse']==$_POST[$donnees['id']])
+                    $note=$note+1;
+            }
+            echo $note;
+        }
             ?>
+
+
+
+
 </body>

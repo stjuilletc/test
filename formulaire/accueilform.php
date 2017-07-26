@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" type="text/css" href="fermetagueule.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8" />
         <title>Test2.SiteSonny</title>
         <h1>Bienvenue sur notre page d'acceuil. </h1>
@@ -20,6 +20,10 @@
 
     <form action="http://localhost:8080/projet/formulaire/mesform2.php">
     <p><input type="submit" name="submit5" value="Repondre aux formulaires"></p>
+    </form>
+    </br >
+      <form action="http://localhost:8080/projet/formulaire/suppform.php">
+    <p><input type="submit" name="submit6" value="Supprimer des formulaires"></p>
     </form>   	
 
     </body>
