@@ -15,7 +15,7 @@ public class Bouton extends JButton implements ActionListener{
         this.addActionListener(this);
     }
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {// calcul le produit en croix
         float d=f.calcul();
         JOptionPane.showMessageDialog(f,d);
     }

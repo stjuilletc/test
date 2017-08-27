@@ -35,7 +35,7 @@ public class Fenetre extends JFrame {
         this.setVisible(true);
     }
 
-    public float calcul(){
+    public float calcul(){//recupere les données et calcul la 4 eme valeur (D) depuis les 3 premieres valeurs  A B C
         String sa=jtfA.getText();
         String sb=jtfB.getText();
         String sc=jtfC.getText();
